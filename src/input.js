@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './input.scss';
+import './input.scss';
 
 class Input extends React.Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class Input extends React.Component {
     const { id, label, onChange, onBlur, type, ...rest } = this.props; // eslint-disable-line no-unused-vars
     const { required } = rest;
 
-    return (<div ref={ (node) => { this.root = node; } } className={ `mdl-textfield mdl-js-textfield mdl-textfield--floating-label ${style.fullwidth}` }>
+    return (<div ref={ (node) => { this.root = node; } } className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label fullwidth">
       <input className="mdl-textfield__input" type={ type || 'text' } id={ id } onChange={ this.handleChange } onBlur={ this.handleBlur } { ...rest } />
       <label className="mdl-textfield__label" htmlFor={ id }>{ label }</label>
       { required && <span className="mdl-textfield__error">{ label } is required</span> }

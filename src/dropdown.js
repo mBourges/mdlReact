@@ -2,7 +2,7 @@
 
 import React from 'react';
 import classNames from 'classnames';
-import style from './dropdown.scss';
+import './dropdown.scss';
 
 class Dropdown extends React.Component {
   constructor(props) {
@@ -69,11 +69,11 @@ class Dropdown extends React.Component {
 
   render() {
     const { isListOpen } = this.state;
-    const dropdownClass = classNames(style.mdDropown, {
-      [style.hasValue]: this.hasSelectedValue()
+    const dropdownClass = classNames('mdDropown', {
+      hasValue: this.hasSelectedValue()
     });
-    const comboBoxClass = classNames(style.comboBox, style.inputBox);
-    const caretClass = classNames('material-icons', style.caret);
+    const comboBoxClass = classNames('comboBox', 'inputBox');
+    const caretClass = classNames('material-icons', 'caret');
 
     return (<div className={ dropdownClass }>
       <div className={ comboBoxClass } onClick={ this.show }>
@@ -82,7 +82,7 @@ class Dropdown extends React.Component {
       <label>{ this.props.label }</label>
       <i className={ caretClass }>arrow_drop_down</i>
       { isListOpen && <ul>
-        { this.props.canBeEmpty && <li className={ style.reset } onClick={ this.handleReset }>
+        { this.props.canBeEmpty && <li className="reset" onClick={ this.handleReset }>
           { this.props.noValueLabel || 'No Value' }
         </li> }
         { this.generateOptionList() }

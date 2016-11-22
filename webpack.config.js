@@ -28,7 +28,7 @@ module.exports = (env) => {
     module: {
         loaders: [
           { test: /\.js$/, loader: 'babel-loader', exclude: /(node_modules|bower_components)/ },
-          { test: /\.scss$/, loader: env.prod ? ExtractTextPlugin.extract('css-loader?minimize!postcss-loader!sass-loader') : ExtractTextPlugin.extract('css-loader!postcss-loader!sass-loader') }
+          { test: /\.scss$/, loader: env.prod ? ExtractTextPlugin.extract('css-loader?modules?minimize!postcss-loader!sass-loader') : ExtractTextPlugin.extract('css-loader!postcss-loader!sass-loader') }
       ]
     },
     plugins: removeEmptyPlugin([

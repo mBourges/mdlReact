@@ -1,0 +1,88 @@
+.mdDropown {
+  width: 100%;
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px 0;
+
+  .inputBox {
+    font: 13.3333px Arial;
+  }
+
+  .comboBox {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: block;
+    font-size: 16px;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 4px 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    color: inherit;
+    min-height: 18px;
+    cursor: pointer;
+  }
+
+  .caret {
+    position: absolute;
+    right: 8px;
+    top: 25px;
+    color: rgba(0, 0, 0, 0.12);
+  }
+
+  label {
+    bottom: 0;
+    color: rgba(0,0,0,.26);
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: 24px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+  }
+
+  &.hasValue label {
+    color: #3f51b5;
+    font-size: 12px;
+    top: 4px;
+    visibility: visible;
+  }
+
+  ul {
+    position: absolute;
+    transition: .25s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 3px 10px #adadad;
+    z-index: 1000;
+    top: 24px;
+    max-height: 20em;
+    overflow-y: scroll;
+
+    li {
+      padding: 0 8px;
+      line-height: 35px;
+      cursor: pointer;
+    }
+
+    li.reset {
+      opacity: .3;
+    }
+  }
+}

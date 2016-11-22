@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: 6.9.1
+general:
+  branches:
+    only:
+      - master
+dependencies:
+  override:
+    - npm install
+test:
+  override:
+    - npm run validate
+    - npm run build
+  post:
+    - npm run semantic-release

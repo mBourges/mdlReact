@@ -1,6 +1,6 @@
 {
   "name": "mdlReact",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "description": "Material React lite Design for React",
   "main": "dist/index.js",
   "release": {

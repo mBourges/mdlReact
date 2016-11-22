@@ -1,9 +1,11 @@
 import Button from './button';
 import Dropdown from './dropdown';
+import Input from './input';
 
 const mdlReact = {
   Button,
-  Dropdown
+  Dropdown,
+  Input
 };
 
 module.exports = mdlReact;

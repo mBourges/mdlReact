@@ -89,6 +89,7 @@
     }
   },
   "dependencies": {
-    "classnames": "2.2.5"
+    "classnames": "2.2.5",
+    "react-autosuggest": "7.0.1"
   }
 }

@@ -1,0 +1,19 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  font-size: 3.4rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #9e9e9e;
+  border-radius: 50%;
+  line-height: 0;
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}

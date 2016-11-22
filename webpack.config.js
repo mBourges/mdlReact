@@ -13,13 +13,11 @@ module.exports = (env) => {
     resolve: {
       extensions: ['.js', 'css', 'scss'],
       alias: {
-        react: Path.resolve('./node_modules/react'),
-        classnames: Path.resolve('./node_modules/classnames'),
+        react: Path.resolve('./node_modules/react')
       }
     },
     externals: {
-      'react': 'react',
-      'classnames': 'classnames'
+      'react': 'react'
     },
     output: {
       path: Path.join(__dirname, 'dist'),
